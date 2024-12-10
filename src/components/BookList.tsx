@@ -1,28 +1,22 @@
 import React from "react";
 import BookCard from "./BookCard";
-
-interface Book {
-  id: number;
-  title: string;
-  author: string;
-  description: string;
-}
+import Book from "../types/Book";
 
 interface BookListProps {
   books: Book[];
 }
 
-const BookList: React.FC<BookListProps> = ({ books }) => (
+const BookList: React.FC<BookListProps> = ({ books, onDelete }) => (
   <div className="row">
     {books.length > 0 ? (
       books.map((book) => (
         <div className="col-md-4" key={book.id}>
-          <BookCard book={book} />
+          <BookCard onDelete={() => onDelete(book.id)} book={book} />
         </div>
       ))
     ) : (
       <div className="alert alert-light" role="alert">
-        No books found.
+        Tidak ada buku yang ditemukan.
       </div>
     )}
   </div>

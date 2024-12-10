@@ -3,12 +3,15 @@ import Book from "../types/Book";
 
 interface BookFromProps {
   onSubmit: (book: Omit<Book, "id">) => void;
+  initialValues?: Book;
 }
 
-const BookForm: React.FC<BookFromProps> = ({ onSubmit }) => {
-  const [title, setTitle] = useState<string>("");
-  const [author, setAuthor] = useState<string>("");
-  const [description, setDescription] = useState<string>("");
+const BookForm: React.FC<BookFromProps> = ({ onSubmit, initialValues }) => {
+  const [title, setTitle] = useState<string>(initialValues?.title || "");
+  const [author, setAuthor] = useState<string>(initialValues?.author || "");
+  const [description, setDescription] = useState<string>(
+    initialValues?.description || ""
+  );
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

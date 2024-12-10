@@ -1,16 +1,16 @@
 {
   "books": [
     {
-      "id": "1",
-      "title": "Book 1",
-      "author": "Author 1",
-      "description": "Description 1"
+      "title": "React Js Mastering 2 Day",
+      "author": "Fauzi Ferdiansyah",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et harum non labore eligendi commodi atque quisquam ratione libero delectus excepturi, deserunt iusto iure vitae cum soluta. Esse doloribus reprehenderit quo!",
+      "id": "2bd2"
     },
     {
-      "id": "2",
-      "title": "Book 2",
-      "author": "Author 2",
-      "description": "Description 2"
+      "id": "cde3",
+      "title": "Design Thingking Mastering 3 Day",
+      "author": "Fauzi Ferdiansyah",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et harum non labore eligendi commodi atque quisquam ratione libero delectus excepturi, deserunt iusto iure vitae cum soluta. Esse doloribus reprehenderit quo!"
     }
   ]
 }
